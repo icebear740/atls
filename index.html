@@ -12,15 +12,22 @@
     rel="stylesheet" />
   <!-- Lenis Smooth Scrolling Library -->
   <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
-  <script type="module" crossorigin src="/atls/assets/index-3tKTqXsS.js"></script>
-  <link rel="stylesheet" crossorigin href="/atls/assets/index-C8eZMyrk.css">
+  <script type="module" crossorigin src="/atls/assets/index-DZNPYFZy.js"></script>
+  <link rel="stylesheet" crossorigin href="/atls/assets/index-CjrBWCk1.css">
 </head>
 
 <body class="bg-[#0a203f] text-slate-200 antialiased selection:bg-rose-500 selection:text-white">
 
-  <!-- Header & Navigation -->
-  <header class="w-full text-white">
-    <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-6 lg:px-8">
+  <!-- Header & Navigation with Full-Width Background Image -->
+  <header class="relative w-full min-h-[600px] lg:min-h-[85vh] flex flex-col justify-between text-white bg-slate-900 overflow-hidden">
+    <!-- Background Image with Overlay -->
+    <div class="hero-image absolute inset-0 z-0">
+      <img src="/atls/assets/1-mJoGhvVo.png" alt="Medical Training Simulation" class="w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-slate-950/70 backdrop-blur-[1px]"></div>
+    </div>
+
+    <!-- Navigation (Overlayed on top) -->
+    <nav class="relative z-10 mx-auto flex w-full max-w-7xl items-center justify-between px-6 py-6 lg:px-8">
       <div class="flex flex-col">
         <span class="text-[10px] font-bold uppercase tracking-[0.3em] text-sky-400/80">IKABI Organization</span>
         <span class="text-sm font-semibold tracking-wide text-white">ATLS Komisi Trauma</span>
@@ -30,40 +37,30 @@
         Now</a>
     </nav>
 
-    <!-- Hero Grid Section -->
-    <div class="mx-auto grid max-w-7xl gap-12 px-6 py-12 lg:grid-cols-12 lg:px-8 lg:py-20 items-center">
-      <!-- Hero Left Info -->
-      <div class="lg:col-span-7 space-y-6">
-        <p class="hero-eyebrow text-xs font-semibold uppercase tracking-[0.4em] text-sky-400">IKABI Organization</p>
-        <h1 class="hero-title text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl text-white leading-[1.1]">
-          ATLS KOMISI<br><span class="text-sky-300">TRAUMA IKABI</span>
-        </h1>
-        <p class="hero-desc text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl font-light">
-          ATLS merupakan pelatihan trauma yang disusun oleh ACS (American College of Surgeon). Pelatihan ATLS sudah
-          dilaksanakan lebih dari 100 negara, sehingga lulusan pelatihan ini akan dikenali seluruh dunia.
-        </p>
-        <div class="hero-cta flex flex-wrap gap-4 pt-2">
-          <a href="#rsvp"
-            class="rounded-full bg-rose-600 px-6 py-3 font-semibold text-white transition duration-300 hover:bg-rose-500 hover:-translate-y-0.5 shadow-lg shadow-rose-600/20">Daftar
-            Sekarang</a>
-          <a href="#sejarah"
-            class="rounded-full border border-white/20 bg-white/5 px-6 py-3 font-semibold text-white transition duration-300 hover:bg-white/10">Pelajari
-            Sejarah</a>
-        </div>
-      </div>
-
-      <!-- Hero Right Image (Large Vertical) -->
-      <div class="hero-image lg:col-span-5 relative group">
-        <div
-          class="absolute -inset-1 rounded-3xl bg-gradient-to-tr from-sky-500 to-rose-500 opacity-20 blur transition duration-1000 group-hover:opacity-30">
-        </div>
-        <div class="relative overflow-hidden rounded-3xl border border-white/10 shadow-2xl bg-slate-900">
-          <!-- Medical Simulation Placeholder Image -->
-          <img src="/atls/assets/1-mJoGhvVo.png" alt="Medical Training Simulation"
-            class="h-[480px] w-full object-cover transition duration-700 group-hover:scale-105" />
-        </div>
+    <!-- Centered Hero Text Content -->
+    <div class="relative z-10 mx-auto max-w-4xl px-6 py-16 flex-grow flex flex-col justify-center items-center text-center space-y-6">
+      <p class="hero-eyebrow text-xs md:text-sm font-extrabold uppercase tracking-[0.6em] text-sky-400">
+        ATLS NUSANTARA
+      </p>
+      
+      <h1 class="hero-title text-4xl sm:text-5xl lg:text-6xl font-serif text-white leading-tight max-w-3xl drop-shadow-lg">
+        Pelatihan ATLS Komisi Trauma IKABI
+      </h1>
+      
+      <p class="hero-desc text-base sm:text-lg text-slate-200 leading-relaxed max-w-2xl font-light">
+        ATLS merupakan pelatihan trauma yang disusun oleh ACS (American College of Surgeon). Pelatihan ATLS sudah dilaksanakan lebih dari 100 negara, sehingga lulusan pelatihan ini akan dikenali seluruh dunia.
+      </p>
+      
+      <div class="hero-cta flex flex-wrap justify-center gap-4 pt-4">
+        <a href="#rsvp"
+          class="rounded-full bg-rose-600 px-8 py-3.5 font-semibold text-white transition duration-300 hover:bg-rose-500 hover:-translate-y-0.5 shadow-lg shadow-rose-600/20">Daftar Sekarang</a>
+        <a href="#sejarah"
+          class="rounded-full border border-white/20 bg-white/10 backdrop-blur-sm px-8 py-3.5 font-semibold text-white transition duration-300 hover:bg-white/20">Pelajari Sejarah</a>
       </div>
     </div>
+
+    <!-- Extra bottom spacer for vertical balance -->
+    <div class="h-16 relative z-10"></div>
   </header>
 
   <!-- Main Container -->
